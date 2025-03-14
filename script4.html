@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicação</title>
+    <script>
+        function multiplicacao(event){
+            event.preventDefault()
+            let n1 = document.getElementById("valorA").value
+            let n2 = document.getElementById("valorB").value
+            let resultado = n1 * n2
+            document.getElementById("valorTotal").value = resultado
+        }
+    </script>
+</head>
+<body>
+    <h2>Multiplicação de dois valores</h2>
+    <form id="forms">
+        <input type="text" id="valorA" placeholder="insira um número"><br><br>
+        <input type="text" id="valorB" placeholder="insira um número"><br><br>
+        <input type="text" id="valorTotal" placeholder="aguarde o resultado"><br><br>
+        <button onclick="multiplicacao(event)">Enviar</button>
+    </form>
+</body>
+</html>

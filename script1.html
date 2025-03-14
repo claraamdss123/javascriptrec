@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtração de dois números</title>
+    <script>
+        function subtrair(x, y){
+            if(x >= y){
+                let resultado = x - y; 
+                alert("A subtração de " + x + " e " + y + " é igual á " + resultado)
+            }else{
+                alert("O valor " + x + " é menor que o valor de " + y)
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick="subtrair(Number(prompt('Digite o primeiro número: ')), Number(prompt('Digite o segundo número: ')))"> Fazer uma subtração</button>
+</body>
+</html>

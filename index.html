@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<body>
+<head>
+    <meta charset="utf-8" />
+    <title>Lorem Ipsum</title>
+	  <link rel="stylesheet" href="css/style.css"/>
+    <script>
+      function validaCampo(){
+        let nome = document.getElementById("name")
+        let mail = document.getElementById("mail")
+        let comment = document.getElementById("comment")
+
+        if (nome.value.trim() === "") {
+                alert("Por favor, preencha o campo Nome");
+                nome.focus();
+                return false;
+        }
+
+        if (mail.value.trim() === "") {
+                alert("Por favor, preencha o campo E-mail");
+                mail.focus();
+                return false;
+        }
+
+        if (comment.value.trim() === "") {
+                alert("Por favor, preencha o campo Comentário");
+                comment.focus();
+                return false;
+        }
+
+        return true;
+      }
+    </script>
+</head>
+</body>
+    <div id="container">
+        <div id="header">
+            <img class="logo" src="midias/example-logo.png"/>
+            <div id="links">
+                <a href="../...">Inicio</a>
+                <a href="../...">Acerca</a>
+                <a href="../...">Contactos</a>
+            </div>
+        </div>
+        
+            <img class="picture" src="midias/image1.jpg"/>
+            <div class="contenttext">
+              <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, felis nec semper vehicula, nisl ante viverra neque, quis tincidunt lorem felis vitae velit. Curabitur risus ipsum, varius non lacinia non, molestie a nibh. Nullam condimentum efficitur risus nec finibus. Aliquam erat volutpat. Aliquam at neque orci. Nullam ultricies dui ac ornare pellentesque. Donec nunc orci, scelerisque malesuada elit non, convallis convallis risus. Nullam eleifend efficitur magna id consectetur. In fermentum, ipsum ac dignissim placerat, leo dui auctor leo, sit amet dictum augue dui nec est. Nunc vel neque vitae sapien congue lobortis in in eros. Sed quis tellus a leo lacinia cursus. Vivamus tellus est, vulputate et scelerisque sit amet, tincidunt ac justo. Ut feugiat imperdiet porttitor. Donec et velit in purus mattis volutpat. Etiam ac urna porttitor, bibendum turpis ac, pulvinar purus. Integer semper orci nulla.
+
+Vivamus non odio lacus. Maecenas nec nisl sit amet nunc tincidunt ullamcorper eu ut enim. Sed sed convallis quam. Aenean elementum vestibulum pharetra. Phasellus id ex id odio lacinia elementum nec vel leo. Aliquam eget lacus nec nisl lobortis molestie a ac lorem. Aliquam tristique fermentum malesuada. Sed sit amet nisl et ipsum cursus mollis quis et ex. In mattis posuere mauris. Quisque rutrum magna id nibh semper, ullamcorper sagittis lacus interdum. Donec condimentum eu nisl vitae iaculis. Phasellus porta, dui congue tristique tristique, ipsum nulla tincidunt elit, at interdum tortor mi ac mauris. Integer risus enim, pulvinar et consequat eget, tincidunt interdum orci. Donec interdum ex vel lectus congue mattis mattis non odio. Nunc efficitur elit ac posuere molestie. Nam gravida condimentum nisl, vitae mollis eros molestie eu.</p><br>
+            <!-- Os videos gastam muitos recursos do servidor. Podemos utilizar videos pequenos ou incorporar do youtube (como incorporar - https://youtu.be/fJE4f-Y_Y1k), ou adquirir espaço num servidor mais potente e, naturalmente, mais caro. -->
+            <video class= "video" controls>
+              <source src="midias/movie.mp4" type="video/mp4">
+                Este navegador não suporta video em HTML 5.
+            </video>
+            
+          </div>
+		  
+		  <div class="form">
+		  <h2>enviar um e-mail:</h2>
+			<!-- para enviar o formulário por e-mail tem de existir uma programação em PHP a nivel do servidor, mas se substituires o exemplo embaixo por um endereço de email teu, podes experimentar que manualmente ainda é possivel enviar o email com a informação do formulário-->
+			<form onsubmit="return validaCampo()">
+			Nome:<br>
+			<input type="text" name="name" id="name"><br>
+			E-mail:<br>
+			<input type="text" name="mail" id="mail"><br>
+			Comentário:<br>
+			<textarea name="comment" id="comment" cols="50" rows="5"></textarea><br><br>
+			<button type="submit">Salvar</button>
+			</form>
+		</div>
+  </div>
+        
+        <div id="footer"><a href="#">Website realizado por Maria Clara Assunção</a></div>
+    </div>
+</body>
+</html>

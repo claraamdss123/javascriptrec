@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de String</title>
+    <script>
+        function lerTexto() {
+            let texto = document.getElementById("inserirTexto").value
+            let tamanho = texto.length
+            let maiusculo = texto.toUpperCase()
+            let minusculo = texto.toLowerCase()
+
+            alert(
+                "Tamanho: " + tamanho + "\nMaiúsculo: " + maiusculo + "\nMinúsculo: " + minusculo
+            )
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="inserirTexto" placeholder="Insira um texto"><br><br>
+    <button onclick="lerTexto()">Enviar</button>
+</body>
+</html>
